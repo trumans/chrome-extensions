@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<head>
+  <script src='eb_parse_results.js'></script>
+  <style> 
+    p.boxed {
+      border-style: solid;
+      border-width: 1px;
+      margin-bottom: 0px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+  The titles, prices and other information are re-listed at the bottom of this 
+  popup for copying-and-pasting into a text file for creating a csv import to a 
+  spreadsheet. 
+  </p>
+  <p>
+  To filter, enter one or more terms separated by a space. Prefix with "-" to 
+  exclude. Check 'Regex' to filter with a regular expression. Filtering is 
+  case-insensitive.
+  </p>
+  <input type='text' id='filter' placeholder='Filter'>
+  <input type='checkbox' id='regex'>
+  <label for=regex>Regex</label><br>
+  <table id='rows'>
+    <tr>
+      <th><input type=checkbox checked id='set_all'></th>
+      <th align=left>set all</th>
+    </tr>
+  </table>
+  <p id='csv' class='boxed'></p>
+</body>
+</html>

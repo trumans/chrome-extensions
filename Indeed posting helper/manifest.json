@@ -1,0 +1,16 @@
+{
+  "name": "Indeed job postings helper",
+  "description": "Open all job psotings in tabs, etc",
+  "version": "1.0",
+  "minimum_chrome_version": "16",
+  "permissions": ["<all_urls>", "declarativeContent"],
+  "background": {
+    "scripts": ["Indeed_parse_posts.js"],
+    "persistent": false
+  },
+  "page_action": {
+  	"default_icon": "Indeed_helper_icon.png",
+  	"default_popup": "Indeed_posts_parsed.html"
+  },
+  "manifest_version": 2
+}

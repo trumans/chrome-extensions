@@ -1,0 +1,16 @@
+{
+  "name": "Download ebay page to spreadsheet",
+  "description": "Parse contents of the current ebay search results and download for creating a spreadsheet.",
+  "version": "1.0",
+  "minimum_chrome_version": "16",
+  "permissions": ["<all_urls>", "declarativeContent"],
+  "background": {
+    "scripts": ["eb_parse_results.js"],
+    "persistent": false
+  },
+  "page_action": {
+  	"default_icon": "eb_parser_icon.png",
+  	"default_popup": "eb_results_parsed.html"
+  },
+  "manifest_version": 2
+}
