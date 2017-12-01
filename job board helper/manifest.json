@@ -1,0 +1,16 @@
+{
+  "name": "job postings helper",
+  "description": "Open selected job postings in separate tabs",
+  "version": "1.0",
+  "minimum_chrome_version": "16",
+  "permissions": ["<all_urls>", "declarativeContent", "tabs"],
+  "background": {
+    "scripts": ["job_board_parse_posts.js", "send_job_posts_rows.js"],
+    "persistent": false
+  },
+  "page_action": {
+  	"default_icon": "job_board_helper_icon.png",
+  	"default_popup": "job_board_posts_parsed.html"
+  },
+  "manifest_version": 2
+}
